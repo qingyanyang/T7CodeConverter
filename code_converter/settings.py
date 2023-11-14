@@ -122,6 +122,7 @@ STATIC_URL = "/static/"
 STATIC_ROOT = "/home/site/wwwroot/static"
 
 
+
 # STATICFILES_DIRS = [
 #     BASE_DIR / "static"
 # ]
