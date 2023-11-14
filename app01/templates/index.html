@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Converter</title>
-    <link rel="icon" href="../static/imgs/logo_small.png">
 
-    <link rel="stylesheet" href="../static/css/index.css">
-    <link rel="stylesheet" href="../static/css/alert.css">
+    <link rel="icon" href="{% static 'imgs/logo_small.png' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/alert.css' %}">
 
     <!-- CodeMirror CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.css"/>
@@ -42,7 +42,7 @@
 
 <body>
     <header>
-        <img src="../static/imgs/logo.png" alt="T7 code converter" class="logo">
+        <img src="{% static 'imgs/logo.png' %}" alt="T7 code converter" class="logo">
     </header>
     <div class="content">
         <div class="lan_list">
@@ -95,8 +95,7 @@
         </div>
     </div>
     <footer></footer>
-    <script src="../static/js/index.js"></script>
-    
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
 
 </html>
