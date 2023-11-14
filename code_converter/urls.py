@@ -25,10 +25,8 @@ Routing:
 """
 urlpatterns = [
     # path("admin/", admin.site.urls),
-    path("codeConverter/",views.code_converter),
-    path("codeConverter/api/submit/", views.code_converter_submit),
-    path("codeConverter/api/correct/",views.correct_fromLanguage),
-    path("test/",views.test),
+    path("", views.code_converter),  
+    path("api/submit/", views.code_converter_submit),
+    path("api/correct/", views.correct_fromLanguage),
+    path("test/", views.test),
 ]
-
-
