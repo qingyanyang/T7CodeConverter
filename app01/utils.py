@@ -1,11 +1,10 @@
+import os
 from openai import OpenAI
 
-client = OpenAI()
-# import os
-# from dotenv import load_dotenv
 
-# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 # common generator
 def generator(prompt: str) -> str:
