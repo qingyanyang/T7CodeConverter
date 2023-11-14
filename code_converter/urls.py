@@ -24,7 +24,7 @@ Routing:
 .../codeConverter/api/submit/  : POST request; submit infor, return string
 """
 urlpatterns = [
-    # path("admin/", admin.site.urls),
+    path("admin/", admin.site.urls),
     path("", views.code_converter),  
     path("api/submit/", views.code_converter_submit),
     path("api/correct/", views.correct_fromLanguage),
