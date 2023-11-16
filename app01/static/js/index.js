@@ -72,7 +72,7 @@ convertBtn.addEventListener("click", () => {
     console.log("selectedValue_t", switchSuffixToName(selectedValue_t));
     console.log("selectedValue_s", switchSuffixToName(selectedValue_s));
     //ajax send request
-    sendHttpRequest("/codeConverter/api/submit/", "POST", text)
+    sendHttpRequest("/api/submit/", "POST", text)
       .then((response) => {
         console.log("拿到啦");
         // Handle the response
@@ -103,7 +103,7 @@ convertBtn.addEventListener("click", () => {
               let textReq = {
                 raw_code: input.getValue(),
               };
-              sendHttpRequest("/codeConverter/api/correct/", "POST", textReq)
+              sendHttpRequest("/api/correct/", "POST", textReq)
                 .then((response) => {
                   console.log("拿到啦2");
                   // Handle the response
